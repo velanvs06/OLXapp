@@ -6,15 +6,17 @@ import com.atlas.controller.admin;
 
 public class MainClass {
     public static void main(String[] args) {
+
         ScannerClass scannerClass = ScannerClass.getInstance();
-        System.out.println("Login Option:");
-        System.out.printf("1: admin");
-        System.out.printf("2: user");
-        System.out.println("Press 0 to exit");
+
         boolean loop = true;
-        while(loop = true) {
-        switch (scannerClass.readInt())
-        {
+        while(loop == true) {
+            System.out.println("Login Option:");
+            System.out.println("1: admin");
+            System.out.println("2: user");
+            System.out.println("Press 0 to exit");
+            switch (scannerClass.readInt())
+            {
                 case 1:
                     new admin().adminStart();
                     break;
@@ -27,8 +29,8 @@ public class MainClass {
                 default:
                     System.out.println("Enter correct option");
                     break;
+                }
             }
-        }
     }
 
 }

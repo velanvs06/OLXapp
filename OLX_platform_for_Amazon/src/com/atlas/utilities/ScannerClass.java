@@ -27,7 +27,8 @@ public class ScannerClass {
         int val = sc.nextInt();
         return val;
     }
-    public String readLine() {
+    public String readLine()
+    {
         return sc.nextLine();
     }
 
